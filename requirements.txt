@@ -1,0 +1,24 @@
+# Trishul — Milestone 1 (Data Pipeline) dependencies only.
+# M2+ deps (pyahocorasick, confusable_homoglyphs, cryptography, scikit-learn, etc.)
+# are intentionally NOT included here. See plan.md §3.
+#
+# Versions are left unpinned here; resolved versions are captured after install
+# and recorded in data/DATA_CARD.md for reproducibility.
+
+datasets
+huggingface_hub
+sentence-transformers
+faiss-cpu
+transformers
+blake3
+tqdm
+torch
+fastapi
+uvicorn
+pytest
+httpx
+ollama
+
+# M2 demo runtime
+pyahocorasick==2.3.1  # Layer 2a Aho-Corasick
+mcp==2.2.0  # mock MCP server + backend MCP client (Streamable HTTP; pulls in httpx2)
