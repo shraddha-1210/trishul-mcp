@@ -1,0 +1,74 @@
+/*
+ * Trishul design tokens. Single source for every color, shadow and radius.
+ * Dark is the primary theme (default); light is secondary. The theme is driven by
+ * the `dark` class plus `data-theme` on <html>, set before first paint in index.html.
+ *
+ * Semantic colors: allow = emerald, block = red, amber = escalate / designed-not-built,
+ * enterprise = blue. Text-on-accent is near-black: white on #10b981 fails WCAG AA.
+ */
+
+:root {
+  /* light (secondary) */
+  --background: #fafafa;
+  --surface: #ffffff;
+  --surface-2: #f4f4f5;
+  --foreground: #0a0a0a;
+  --muted-foreground: #5c5c66;
+  --subtle-foreground: #8a8a94;
+  --border: #e6e6e9;
+  --border-strong: #d4d4d8;
+
+  --accent-brand: #10b981;
+  --accent-brand-fg: #022c22;
+  --accent-text: #047857;
+  --accent-soft: rgb(16 185 129 / 0.1);
+
+  --allow: #059669;
+  --allow-soft: rgb(5 150 105 / 0.1);
+  --block: #dc2626;
+  --block-soft: rgb(220 38 38 / 0.08);
+  --amber: #b45309;
+  --amber-dot: #f59e0b;
+  --amber-soft: rgb(245 158 11 / 0.12);
+  --enterprise: #2563eb;
+  --enterprise-soft: rgb(37 99 235 / 0.1);
+
+  --shadow-sm: 0 1px 2px rgb(10 10 10 / 0.04);
+  --shadow-md: 0 1px 3px rgb(10 10 10 / 0.06), 0 4px 12px rgb(10 10 10 / 0.04);
+  --shadow-lg: 0 8px 30px rgb(10 10 10 / 0.08);
+
+  --radius: 0.5rem;
+  --sidebar-width: 248px;
+  --topbar-height: 56px;
+}
+
+:root.dark {
+  /* dark (primary) */
+  --background: #0a0a0a;
+  --surface: #111111;
+  --surface-2: #181818;
+  --foreground: #ededed;
+  --muted-foreground: #a1a1a1;
+  --subtle-foreground: #6e6e6e;
+  --border: #1f1f1f;
+  --border-strong: #2a2a2a;
+
+  --accent-brand: #10b981;
+  --accent-brand-fg: #022c22;
+  --accent-text: #34d399;
+  --accent-soft: rgb(16 185 129 / 0.12);
+
+  --allow: #10b981;
+  --allow-soft: rgb(16 185 129 / 0.12);
+  --block: #f87171;
+  --block-soft: rgb(248 113 113 / 0.12);
+  --amber: #fbbf24;
+  --amber-dot: #f59e0b;
+  --amber-soft: rgb(245 158 11 / 0.12);
+  --enterprise: #60a5fa;
+  --enterprise-soft: rgb(96 165 250 / 0.12);
+
+  --shadow-sm: 0 1px 2px rgb(0 0 0 / 0.4);
+  --shadow-md: 0 1px 3px rgb(0 0 0 / 0.5), 0 4px 12px rgb(0 0 0 / 0.3);
+  --shadow-lg: 0 8px 30px rgb(0 0 0 / 0.5);
+}
