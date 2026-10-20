@@ -1,0 +1,12 @@
+# Runtime deps for the demo stack (backend + mock MCP server), pinned so every
+# machine resolves the same versions. The data pipeline / training deps live in
+# requirements.txt and are not needed to run the demo.
+fastapi==0.141.1
+starlette==1.3.1
+uvicorn[standard]==0.52.4
+pydantic==2.13.5
+httpx==0.28.1
+anyio==4.14.2
+mcp==2.2.0
+pyahocorasick==2.3.1
+blake3==1.0.9
